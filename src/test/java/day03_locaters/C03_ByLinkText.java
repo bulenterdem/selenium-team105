@@ -21,6 +21,7 @@ public class C03_ByLinkText {
         driver.get("http://www.ramazon.com");
 
        //  WebElement giftCardLinki= driver.findElement(By.linkText("Gift Cards"));
+
         Thread.sleep(4000);
         WebElement giftCardLinki= driver.findElement(By.partialLinkText("Gift"));
         giftCardLinki.click();
@@ -36,8 +37,6 @@ public class C03_ByLinkText {
         } else {
             System.out.println("Gift Card Testi FAILED");
         }
-
-
 
         Thread.sleep(3000);
        driver.close();
